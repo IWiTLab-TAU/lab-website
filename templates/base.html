@@ -52,16 +52,11 @@
             border-radius: 8px;
         }
 
-        .profile-pic {
-          position: absolute;
-          top: 1em;
-          right: 1em;
-          width: 110px;
-          height: 110px;
-          border-radius: 50%;
-          object-fit: cover;
-          border: 3px solid white;
-          box-shadow: 0 0 6px rgba(54, 120, 197, 0.47);
+        .lab-logo {
+            height: 60px; /* or whatever size works for your header */
+            width: auto;
+            display: block;
+            margin: 0 auto; /* optional: center horizontally */
         }
 
         footer {
@@ -80,7 +75,7 @@
 <body>
 
     <header>
-    <img src="{% static 'images/iwit_logo.jpg' %}" alt="IWiTLab" class="profile-pic">
+    <img src="{% static 'images/iwit_logo.jpg' %}" alt="IWiTLab" class="lab-logo">
     <h1 style="margin-bottom: 0.3em;">IWiTLab</h1>
     <p style="margin-top: 0; font-size: 1.1em;">Interaction With Technology, Tel Aviv University</p>
         <nav>
