@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Team - IWiTLab{% endblock %}
+
+{% block content %}
+<h2>Our Team</h2>
+<div class="team-container">
+    <div class="team-member">
+        <img src="{% static 'images/iwit_kogo.jpg' %}" alt="Joachim Meyer" class="member-photo">
+        <h3>Prof. Joachim Meyer</h3>
+        <p>Lab Director</p>
+        <p>Joachim leads the IWiTLab at Tel Aviv University.</p>
+    </div>
+
+    <!-- Add more members as needed -->
+</div>
+
+<style>
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .team-member {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .member-photo {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 3px solid #2c3e50;
+    }
+
+    .team-member h3 {
+        margin: 0.5em 0 0.2em;
+        font-size: 1.2em;
+        color: #2c3e50;
+    }
+
+    .team-member p {
+        font-size: 0.95em;
+        color: #555;
+    }
+</style>
+{% endblock %}

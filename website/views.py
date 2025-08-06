@@ -17,3 +17,6 @@ def teaching(request):
 
 def awards(request):
     return render(request, 'awards.html')
+
+def team(request):
+    return render(request, 'team.html')
